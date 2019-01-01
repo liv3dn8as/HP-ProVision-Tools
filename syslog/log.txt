@@ -1,0 +1,37 @@
+
+2018-12-31 03:34:17 : SSH Connection Error for 10.1.1.1. Please check your connection or credentials!
+2018-12-31 03:34:38 : SSH Connection Error for 10.1.1.104. Please check your connection or credentials!
+2018-12-31 03:34:38 : Attempt to backup 2 devices -> Success : 0, Failure : 2 
+2018-12-31 03:35:18 : Successfully connect to 10.1.1.1
+2018-12-31 03:37:44 : Successfully connect to 10.1.1.1
+2018-12-31 03:39:44 : Successfully connect to 10.1.1.1
+2018-12-31 03:41:25 : Successfully connect to 10.1.1.1
+2018-12-31 03:41:28 : Successfully backup device 10.1.1.1 
+2018-12-31 03:41:29 : SSH Connection Error for 10.1.1.104. Please check your connection or credentials!
+2018-12-31 03:41:29 : Attempt to backup 2 devices -> Success : 1, Failure : 1 
+2018-12-31 03:42:41 : Successfully connect to 10.1.1.1
+2018-12-31 03:42:43 : Successfully backup device 10.1.1.1 
+2018-12-31 03:42:44 : SSH Connection Error for 10.1.1.104. Please check your connection or credentials!
+2018-12-31 03:42:44 : Attempt to backup 2 devices -> Success : 1, Failure : 1 
+2018-12-31 03:45:12 : Successfully connect to 10.1.1.1
+2018-12-31 03:45:15 : Successfully backup device 10.1.1.1 
+2018-12-31 03:45:16 : SSH Connection Error for 10.1.1.104. Please check your connection or credentials!
+2018-12-31 03:45:16 : Attempt to backup 2 devices -> Success : 1, Failure : 1 
+2018-12-31 03:53:40 : Successfully connect to 10.1.1.1
+2018-12-31 04:01:06 : Successfully connect to 10.1.1.1
+2018-12-31 04:02:09 : Successfully connect to 10.1.1.1
+2018-12-31 04:04:37 : Successfully connect to 10.1.1.1
+2018-12-31 04:06:10 : Successfully connect to 10.1.1.1
+2018-12-31 04:06:43 : Successfully connect to 10.1.1.1
+2018-12-31 04:07:14 : Successfully connect to 10.1.1.1
+2018-12-31 04:07:38 : Successfully connect to 10.1.1.1
+2018-12-31 04:07:55 : Successfully connect to 10.1.1.1
+2018-12-31 04:15:13 : Successfully connect to 10.1.1.1
+2018-12-31 04:15:38 : Successfully connect to 10.1.1.1
+2018-12-31 04:15:40 : Successfully backup device 10.1.1.1 
+2018-12-31 04:15:41 : SSH Connection Error for 10.1.1.104. Please check your connection or credentials!
+2018-12-31 04:15:41 : Attempt to backup 2 devices -> Success : 1, Failure : 1 
+2018-12-31 04:32:22 : Successfully connect to 10.1.1.1
+2018-12-31 04:32:25 : Successfully backup device 10.1.1.1 
+2018-12-31 04:32:26 : SSH Connection Error for 10.1.1.104. Please check your connection or credentials!
+2018-12-31 04:32:26 : Attempt to backup 2 devices -> Success : 1, Failure : 1 
