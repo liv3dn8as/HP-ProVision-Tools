@@ -171,8 +171,7 @@ def main():
             device_list = excel_to_lists(inventory_file)
             #print(json.dumps(output, indent=4))
 
-            ssh_client = paramiko.SSHClient()
-            ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+            net_connect = ConnectHandler()
             for device in device_list:
                 iteration += 1
                 try:
@@ -188,7 +187,7 @@ def main():
                                }
                 #print(device_info)
                 try:
-                    ssh_client.connect(device_info["ip"], username=device_info["username"], password=device_info["password"])
+                    net_connect(device_info["ip"], username=device_info["username"], password=device_info["password"])
                 except:
                     print("SSH Connection Error for {}. Please check your connection or credentials!".format(device_info["ip"]))
                     log("SSH Connection Error for {}. Please check your connection or credentials!\n".format(device_info["ip"]), data_log)
@@ -197,14 +196,10 @@ def main():
                 print("Successfully connect to {}".format(device_info["ip"]))
 				log("Successfully connect to {}\n".format(device_info["ip"]), data_log)
 				success += 1
-					ssh_conn = ssh_client.invoke_shell()
-					ssh_conn.send("\r\n")
-					ssh_conn.send("terminal length 1000\n")
-					ssh_conn.send("show run\n")
-					ssh_conn.send("\n")
+					net_connect.send_commands("show run")
 					time.sleep(2)
-                if ssh_conn.recv_ready():
-                    output = ssh_conn.recv(65535)
+                if net_connect.recv_ready():
+                    output = net_connect.recv(65535)
 					print(output)
                 # Python3 treat default to binary raw bits, not string implicitly --> use .decode()
                 #output_str = str(output.decode())
